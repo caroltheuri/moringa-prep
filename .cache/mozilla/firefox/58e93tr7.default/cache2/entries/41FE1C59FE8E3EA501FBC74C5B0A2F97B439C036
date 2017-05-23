@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MPFT</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lib.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="load()">
+    <div id="container">
+        <header>Front End Web Development
+        </header>
+        <div>
+            <div id="feed_btn">
+                <button class="btn" id="open_feedback">Feedback</button>
+            </div>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submittedFull) {window.location=''}"></iframe>
+            <div id="feedback_modal">
+                <form id="feedback_form" enctype="text/plain" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLScs-ILUy3ncxp8uNLZf0TGKgPuM9Rn3yd9hL29iPCUANtc-Rg/formResponse" onsubmit="submittedFull=true;">
+                    <label>
+                        <textarea class="hidden moringa_track" name="entry.124781542">Prep full-time</textarea>
+                        What would you like to share with us?
+                        <br>
+                        <textarea cols="70" type="text" name="entry.431125286" required></textarea>
+                        <br>
+                        <br> Email address:
+                        <br>
+                        <textarea cols="70" type="text" name="entry.398147209"></textarea>
+                    </label>
+                    <br>
+                    <button class="btn" id="close_feedback">Submit</button>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <section>
+                <div class="panel-group" id="accordion">
+                    <!-- WEEK 1 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Week 1</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#01.html">1: Monday</a></li>
+                                    <ul>
+                                        <li>Git HTML and CSS Objectives</li>
+                                        <li>Git Workflow</li>
+                                        <li>Markdown</li>
+                                        <li>Hyper Text Markup Language (HTML)</li>
+                                        <li>Indentation and spacing</li>
+                                        <li>HTML block elements</li>
+                                        <li>HTML inline elements</li>
+                                    </ul>
+                                    <li><a class="load done" href="#02.html">2: Tuesday</a></li>
+                                    <ul>
+                                        <li>READMEs</li>
+                                        <li>Styling text</li>
+                                        <li>Debugging</li>
+                                        <li>Github pages</li>
+                                        <li>Branching and Merging</li>
+                                    </ul>
+                                    <li><a class="load done" href="#03.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Styling with classes</li>
+                                        <li>Divs and Spans</li>
+                                        <li>Floats</li>
+                                        <li>The Box Model</li>
+                                        <li>Intermediate CSS</li>
+                                    </ul>
+                                    <li><a class="load done" href="#04.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Classes vs Ids</li>
+                                        <li>Media Features and types</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <li><a class="load done" href="#05.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Independent Project</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend1.html">Weekend</a></li>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 2 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Week 2</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#06.html">1: Monday</a></li>
+                                    <ul>
+                                        <li>Introduction to JavaScript</li>
+                                        <li>Arithmetic</li>
+                                        <li>Variables</li>
+                                        <li>Strings</li>
+                                        <li>Operators</li>
+                                    </ul>
+                                    <li><a class="load done" href="#07.html">2: Tuesday</a></li>
+                                    <ul>
+                                        <li>Data types</li>
+                                        <li>Functions</li>
+                                        <li>Calculator</li>
+                                    </ul>
+                                    <li><a class="load done" href="#08.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Introduction to jQuery(javascript library)</li>
+                                        <li>jQuery: Simple Effects</li>
+                                        <li>jQuery: Add or Remove Classes</li>
+                                        <li>DOM Manipulation and traversal</li>
+                                        <li>Variable Scope</li>
+                                    </ul>
+                                    <li><a class="load done" href="#09.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Forms</li>
+                                        <li>Debugging in Javascript</li>
+                                        <li>Calculator App</li>
+                                        <li>Branching</li>
+                                    </ul>
+                                    <li><a class="load done" href="#10.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Independent Project</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend2.html">Weekend</a></li>
+                                    <ul>
+                                        <li>Practice on branching(Cotrol flows)</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 3 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Week 3</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#11.html">1. Monday</a></li>
+                                    <ul>
+                                        <li>Javascript Arrays</li>
+                                        <li>Array Methods</li>
+                                        <li>Looping in Arrays</li>
+                                        <li>Array Mapping</li>
+                                        <li>Code</li>
+                                    </ul>
+                                    <li><a class="load done" href="#12.html">2. Tuesday</a></li>
+                                    <ul>
+                                        <li>Looping with "for"</li>
+                                        <li>Behaviour Driven Development(BDD)</li>
+                                        <li>Leap Year Exercise</li>
+                                    </ul>
+                                    <li><a class="load done" href="#13.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Practice: Roman Numerals</li>
+                                        <li>Practice: Cryptosquare</li>
+                                    </ul>
+                                    <li><a class="load done" href="#14.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Catch Up Day</li>
+                                    </ul>
+                                    <li><a class="load done" href="#15.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Independent Project</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend3.html">Weekend</a></li>
+                                    <ul>
+                                        <li>Research on Javascript Objects</li>
+                                        <li>Research on Object Oriented programming</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 4 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Week 4</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#16.html">1. Monday</a></li>
+                                    <ul>
+                                        <li>Literal Notation</li>
+                                        <li>Literal Notation vs Constructors</li>
+                                        <li>Constuctors</li>
+                                        <li>Adress Book</li>
+                                        <li>Places Visited</li>
+                                    </ul>
+                                    <li><a class="load done" href="#17.html">2. Tuesday</a></li>
+                                    <ul>
+                                        <li>To Dolist</li>
+                                        <li>Movie Tickets</li>
+                                    </ul>
+                                    <li><a class="load done" href="#18.html">3: Wednesday</a></li>
+                                    <ul>
+                                        <li>Objects within Objects</li>
+                                        <li>Address Book: Business Logic</li>
+                                        <li>Address Book: User Interface Logic</li>
+                                    </ul>
+                                    <li><a class="load done" href="#19.html">4: Thursday</a></li>
+                                    <ul>
+                                        <li>Bank Account</li>
+                                    </ul>
+                                    <li><a class="load done" href="#20.html">5: Friday</a></li>
+                                    <ul>
+                                        <li>Game of Thrones</li>
+                                    </ul>
+                                    <li><a class="load done" href="#weekend4.html">Weekend</a></li>
+                                    <ul>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEEK 5 SECTION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Week 5</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div>
+                                <ol class="panel-body">
+                                    <li><a class="load done" href="#21.html">1: Tuesday</a></li>
+                                    <ul>
+                                        <li>Group Project Development</li>
+                                        <li>Git Work Flow</li>
+                                    </ul>
+                                    <!-- <li><a class="load done" href="#22.html">2: Thursday</a></li>
+            <ul>
+              <li>Check Points</li>
+            </ul>
+            <li><a class="load done" href="#23.html">3: Friday</a></li>
+            <ul>
+              <li>Group Project Presentations</li>
+              <li>Portfolio and Hiring</li>
+            </ul> -->
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <div id="content"></div>
+    </div>
+    <script src="assets/js/lib.js"></script>
+    <script src="assets/js/feedback.js"></script>
+    <script>
+    var completed
+
+    function load(e) {
+        completed = JSON.parse(localStorage.getItem('completed')) || []
+        $('#content').load(location.hash.substring(1) || localStorage.getItem('last_visited') || '01.html', function() {
+            $('.popup').each(function(i, el) {
+                $(el).magnificPopup({
+                    type: $(el).attr('href').substring(0, 2) === '//' ? 'iframe' : 'ajax'
+                })
+            })
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block)
+            })
+
+            localStorage.setItem('last_visited', location.hash.substring(1))
+            localStorage.getItem('name') && $('#name_form').text(localStorage.getItem('name'))
+        })
+
+    }
+
+    function add_name(e) {
+        e.preventDefault()
+        var name = $(this).find('#name').val()
+        localStorage.setItem('name', name)
+        $(this).text(name)
+    }
+
+    function loadEvent(event) {
+        var dest = $(this).attr("href")
+        event.preventDefault()
+        history.pushState(null, event.target.textContent, event.target.href)
+        load()
+    }
+
+    function showHint(event) {
+        $(event.target).hide().parent().find('secret').fadeIn(2000)
+    }
+
+    function submit_code(e) {
+        e.preventDefault()
+        var exercise_name = $(this).parent('code-submission-form').attr('id')
+
+        $.post('submission', $(this).serialize() + '&exercise=' + exercise_name + '&name=' + localStorage.getItem('name'))
+
+        completed.push(exercise_name)
+        localStorage.setItem('completed', JSON.stringify(completed))
+        $(this).html('<p>Code submitted... Thank you!</p>')
+    }
+
+    $('body').on('click', '.load', loadEvent)
+        .on('click', 'hint text', showHint)
+        .on('submit', '.student_code', submit_code)
+        .on('submit', '#name_form', add_name)
+
+
+    $(window).on('popstate', load)
+    </script>
+</body>
+
+</html>
+É»Íîî      Y#Ù≈Y#Ùﬁ=…ñóY%§È   %    :http://moringaprep-ft.herokuapp.com/ necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK 
+Content-Type: text/html;charset=utf-8
+Last-Modified: Wed, 10 May 2017 13:19:28 GMT
+Content-Length: 17073
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.3.1 (Ruby/2.3.4/2017-03-30)
+Date: Tue, 23 May 2017 08:37:34 GMT
+Via: 1.1 vegur
+ original-response-headers Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Last-Modified: Wed, 10 May 2017 13:19:28 GMT
+Content-Length: 17073
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.3.1 (Ruby/2.3.4/2017-03-30)
+Date: Tue, 23 May 2017 08:37:34 GMT
+Via: 1.1 vegur
+ uncompressed-len 0 predictor::resource-count 17 predictor::https://fonts.googleapis.com/css?family=Lato|Open+Sans 1,1,1495528645,4096 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/css/lib.css 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/css/styles.css 1,1,1495528645,4096 predictor::https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js 1,1,1495528645,4096 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/js/lib.js 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/js/feedback.js 1,1,1495528645,4096 predictor::https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/images/github-account-signup.png 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/images/project-directory.png 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/images/hello-world-browser.png 1,1,1495528645,4096 predictor::http://moringaprep-ft.herokuapp.com/assets/images/hello-world-browser-2.png 1,1,1495528645,4096 predictor::http://assets.codepen.io/assets/embed/ei.js?_=1495528659564 1,1,1495528645,4096 predictor::http://assets.codepen.io/assets/embed/ei.js?_=1495528659565 1,1,1495528645,4096 predictor::http://assets.codepen.io/assets/embed/ei.js?_=1495528659566 1,1,1495528645,4096 predictor::http://assets.codepen.io/assets/embed/ei.js?_=1495528659567 1,1,1495528645,4096   B±

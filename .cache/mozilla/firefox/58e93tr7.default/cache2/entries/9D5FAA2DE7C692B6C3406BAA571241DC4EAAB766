@@ -1,0 +1,860 @@
+<section>
+    <h1>Git, HTML , Markup and CSS Objectives</h1>
+    <p>
+        This week we will be learning the building blocks of making basic web pages: HTML and CSS. We will also focus on using the command line and Git to create a daily workflow for our coding projects.
+    </p>
+</section>
+<section>
+    <h2>Daily Goals</h2>
+    <p>Everyone learns at a different pace. Understanding is the most important goal every day. If you feel like you will not be able to complete all of the lessons in a given day, talk to a teacher about ways to ensure that you are covering the day's objectives. And always focus on understanding the concepts at hand, not finishing the work as quickly as possible. Lessons that have "Homework" in the title indicate that the work is expected to be completed at home and not in class.</p>
+</section>
+<section>
+    <h2>Plan</h2>
+    <p>We will begin this week by practicing the command line, Git, Github, and exploring basic HTML. We'll create READMEs to include extra information with our projects on Github. We'll also learn a formatting language called Markdown to format READMEs. Then, we'll explore basic CSS to add styling to our web pages, and actually publish our sites online! Later in the week we will dive deeper into CSS by using divs and spans, floats, cascading, classes, ids, and the box model. Finally, we'll explore a tool called Bootstrap that offers even more powerful styling capability. You're in for a great time!</p>
+    <p>
+        At the end of this section, you will be able to:
+    </p>
+    <ol>
+        <li>Navigate the command line to access and create directories and files</li>
+        <li>Use Git and GitHub to track the creation of static webpages</li>
+        <li>Create a static webpage using HTML</li>
+        <li>Style a static webpage using custom CSS rules in a linked stylesheet</li>
+        <li>Create a project README.md in Markdown</li>
+        <li>Apply Bootstrap rules and classes</li>
+        <li>Adapt a webpage for responsive design</li>
+    </ol>
+</section>
+<section>
+    <h2>Independent Project Objectives</h2>
+    <p>At the end of this section you will complete an independent project. Your instructor will review this project for the following objectives:</p>
+    <ul>
+        <li>Use the most common HTML tags:</li>
+        <ul>
+            <li>p, h, ul, ol, li, em, strong, a, img, div, span</li>
+        </ul>
+        <li>Use Bootstrap classes to style your page</li>
+        <li>Create a custom-made stylesheet that uses cascading, the box model, and floats</li>
+        <li>Implement standard indentation and spacing conventions of HTML and CSS</li>
+        <li>Make Git commits regularly with clear messages that finish the phrase "It willâ€¦"</li>
+        <li>Add a README to the GitHub repository that includes:</li>
+        <ul>
+            <li>author name</li>
+            <li>project or program name</li>
+            <li>description of program</li>
+            <li>program setup instructions</li>
+            <li>link to live version of site on GitHub Pages</li>
+            <li>copyright and license information</li>
+        </ul>
+    </ul>
+</section>
+<section>
+    <h2>Command Line</h2>
+    <p>As a person new to programming, using the terminal interface of a computer may be something you'll do for the first time in this lesson.</p>
+    <p>We often access computer programs through their <em>Graphical User Interface</em> or <em>GUI</em>. This is simply the visual/graphic component of a computer program. For instance, word processing software generally offers a GUI that contains whitespace for us to type in, a cursor to indicate where we're typing, and a variety of buttons, menus, and options to format our work. This is a GUI. So is an email inbox that displays each email's details, allows us to open an email by clicking on its subject line, and offers buttons to reply and format text. </p>
+    <p>However, when we are developing we will often use our devices' terminal interface. The terminal is a text-based interface that allows a user to interact with the computer by entering commands on a command line. You have probably navigated through the folders and files on your device using a GUI tool such as Finder on a Mac or Explore on Windows. In this lesson, we'll explore how we can create, update, delete and navigate our folders and files using the terminal interface. We'll also see how using the terminal gives us access to other commands that we do not have when using the GUI tools our computers provide.</p>
+    <h3>Terminal Access</h3>
+    <h4>Ubuntu Setup</h4>
+    <p>The Terminal application on a PC with Ubuntu installed can be accessed by pressing <em>ctrl + Alt + T</em>. Alternatively, you can locate the Terminal application by searching <em>Terminal</em> once you click on the ubuntu icon on the upper left side of your screen.</p>
+    <h4>Mac Setup</h4>
+    <p>The Terminal application on a Mac is located in the Utilities folder, which is located inside the Applications folder. Alternatively, you can locate the Terminal application by clicking on the magnifying glass icon at the upper right corner of the screen and typing <i>Terminal</i>.</p>
+    <h4>Windows Setup</h4>
+    <p>On Windows we need to use a terminal program as well. There are a lot of good options out there, but we recommend using a program called <b>git bash</b>. You can download it <a href="https://git-for-windows.github.io/">here</a></p>
+    <h3>Terminal Command Line Basics</h3>
+    <p>To learn some basics of working with the command line in the terminal, go through the following series on Console Foundations (stop after the fourth section):</p>
+    <ul>
+        <li><a href="https://youtu.be/yreJBmV4_6c" target="_blank">Command Line series introduction</a></li>
+        <li><a href="https://youtu.be/b93ehHTCZAE" target="_blank">Getting around</a></li>
+        <li><a href="https://youtu.be/Q9EeK5_QfvI" target="_blank">Creating and deleting files and directories</a></li>
+        <li><a href="https://youtu.be/6ylJ9ocj29w" target="_blank">Moving and copying files</a></li>
+    </ul>
+    <p>Follow along with the tutorial in the Terminal application on your own computer to practice using the command line for:</p>
+    <ul>
+        <li>Basic navigation</li>
+        <li>File manipulation</li>
+    </ul>
+    <h2>Terminal at Moringa Prep</h2>
+    <p>When you open the Terminal application on Ubuntu, you will begin in your home directory. For example, if your username is Jesse, your home directory is /Users/Jesse. You can verify this by typing pwd at the command prompt and pressing Enter. There is a special subdirectory of your home directory called Desktop (full path: /Users/Jesse/Desktop). This directory contains all of the files and folders that are visible on your Ubuntu desktop.</p>
+    <p>When you work on projects you will be inside subdirectories of the home directory. For example you might be working in the /Users/Guest/my-first-webpage directory, which is a subdirectory of your home directory (/Users/Guest). If you are in the /Users/Guest/my-first-webpage directory, you can return to the parent directory (/Users/Guest) by typing cd .. at the command prompt.</p>
+    <p>At any time you can return to your home directory by typing cd ~ at the command prompt. This is the same as typing cd /Users/Guest (assuming you are working in Ubuntu and your username is Guest). You can verify that you have successfully returned to your home directory by typing the pwd command.</p>
+    <h3>Warm up</h3>
+    <p> Ask yourself the following questions before moving on:</p>
+    <ul>
+        <li>What is the difference between a graphical user interface and a command line interface?</li>
+        <li>What makes a home directory a home directory instead of just a directory or subdirectory?</li>
+        <li>Why do we use a text editor instead of a word processing program for writing programs?</li>
+    </ul>
+    <h3>Code</h3>
+    <p>Now that you have some of the basics of the command line down, let's practice using those new skills to navigate in the terminal.</p>
+    <p><i>Complete the following exercises in your computer's Terminal shell:</i></p>
+    <ol>
+        <li>Open a terminal shell. This will be your home directory. You should have a $ at the end of the prompt. In our lessons, we will begin the code meant for the command line with a $. You will only type what follows the $, not the $ itself. You are now ready to use the command line!</li>
+        <li>Run the command $ pwd. The computer will print the pathname to the directory that you are currently located in. For example, you might see /Users/Guest. </li>
+        <li>Now let's figure out what directories reside in our home directory by running the command $ ls to list all of the directories and files in the current working directory.</li>
+        <li>Move into the Desktop directory by running the command $ cd Desktop. Now run $ ls again to see all of the files and folders located on your computer's desktop.</li>
+        <li>Now that we have entered a few commands, use the up and down arrow keys to navigate to previous commands you've entered.</li>
+        <li>Let's make a new folder on the desktop. Run $ pwd to make sure you are in the Desktop directory. If not, navigate to the Desktop directory by running $ cd Desktop.</li>
+        <li>Then, run $ mkdir test. This will make a new directory on your desktop called test. Take a look and make sure it is there! You can make multiple directories at the same time by putting a space between the directories names. For example, $ mkdir test test2.</li>
+        <li>Move into the test directory through the command line.</li>
+        <li>Run $ touch file1 file2 to create two new files within the test directory called file1 and file 2. The touch command creates a new, empty file.</li>
+    </ol>
+    <p>
+        If you're using Windows PowerShell, you can use the command > New-Item or the alias > ni instead of $ touch. (Note that, by default, Windows will only let you create one new file at a time.)
+    </p>
+    <ol>
+        <li>Type ls to make sure that the files are there. Just like making directories, you can make multiple files at the same time.</li>
+        <li>Run $ touch test2/file1 test2/file2 to make files in the test2 directory. Oops! That didn't work! Why? Well the terminal can only access the directory above the current working directory and any files/directories in the current working directory.
+            <br/> Since test2 is a directory in the Desktop directory, we cannot access it from the test directory. In order to do that we need to run the command $ touch ../test2/file1 ../test2/file2. This path tells the terminal to go up to the Desktop - using the .. command - and then back down to the test2 folder. Notice that we just made two files in a directory that we were not currently in! This works because we supplied the directories we wanted those files to be created in</li>
+        <li>Let's navigate back to the Desktop. Desktop is the parent of our current working directory, so we can use the command $ cd ... If we wanted to go back to our home directory, we can always use the command $ cd ~.</li>
+        <li>Let's remove the test directory. Run $ rm test.</li>
+        <li>You should get the error rm: test: is a directory. This means that because there are files in the directory, you can't just delete it without deleting all of the files first. To do that, run the command $ rm -r test. This will use the recursive option to instruct the computer to delete everything in the test folder, including the folder itself.</li>
+        <li>Now let's exit the terminal by typing $ exit.</li>
+    </ol>
+    <p>
+        <b>More command line (terminal) practice on your own:</b> Make a folder on your desktop that contains 3 subfolders and in each of those subfolders add in 3 individual files. Get comfortable doing this step by step, but then try to do it in as few commands as possible. Then go through and practice deleting files and folders. Make sure you're comfortable navigating around and creating and deleting both files and directories before moving on.
+    </p>
+</section>
+<section>
+    <h2>TextEditor: Atom</h2>
+    <p>When we write code, we do it in a text editor. Word processing programs like Microsoft Word are not ideal for writing code because they add styles and formatting that can get in the way of our code. We want plain, raw text without any extras for our coding files.</p>
+    <p>If you have a Mac, your device comes with a text editor called TextEdit which can be found in your Applications list. If you have a PC, the default text editor is Notepad(windows) or Gedit(Ubuntu), which can be found though the Start menu. The Mac and ubuntu Terminal applications also include a console-based text editor called Nano, which was referenced in the youtube videos earlier. These text editors allow you to write code with plain, raw text.</p>
+    <p>At Moringa School, we use the free text editor, <b>Atom</b>. Atom was designed with the developer in mind by adding features and customization that help developers write their code more productively.</p>
+    <h3>Installation</h3>
+    <p>To use this on your device, download the appropriate installer for your operating system at the <a href="https://atom.io/" target="_blank">Atom website</a>. Or, on Windows, you can optionally use a <b>package manager</b> such as <a href="https://chocolatey.org/packages/Atom" target="_blank">Chocolatey</a> for installation, too.</p>
+    <h3>Overview</h3>
+    <p>Let's take a quick tour of Atom. When we open the editor, we arrive on an empty file with the name "untitled". If we add content to the file, we see the x at the top becomes a blue circle. This indicates that there is content that hasn't yet been saved. We'll save this file as my-first-webpage.html using the .html extension to indicate that this will be a document written in HTML. The blue circle returns to a grey x and we know that our file's content has been saved.</p>
+    <p>Atom offers developers the ability to customize the editor's settings and shortcuts. Press cmd + , (Mac) or ctrl + , (Windows) to see the Settings view.</p>
+    <p>One setting that we want to make sure we have in place is the tab length. Writing good code means making a habit of using consistent indentation. The standard for indenting lines of code is 2 spaces. We have confirmed that this is set to 2. So, rather than hitting the space bar twice, we can use the tab key for indentation.</p>
+    <p>You won't need to worry too much about all of the customization possibilities now but as you start gaining coding experience, remember that you can return to the Settings view to make updates to keyboard shortcuts, themes, or packages that add other functionality to the editor.</p>
+    <h3>Additional Resources</h3>
+    <p>
+        For more details about using Atom, take a look at the Atom Flight Manual in the <a href="https://atom.io/docs" target="_blank">Documentation</a> on the Atom website.
+    </p>
+</section>
+<section>
+    <h2>Git and Github</h2>
+    <p>
+        When we get started with writing a new program, the last thing we want to happen is to lose any of our hard work. To prevent that terrible possibility from happening, we will save versions of our code on our computer AND also save a version of our code on a location on the web. Later, when we work in teams, there will be more versions of our code as each team member copies the main version to work on, share, review and merge into our final program (and NOT overwrite each other's work!). At Moringa Moringa Prep, we will learn to manage these different versions of our code using two tools: <b>Git</b> and <b>GitHub</b>.
+    </p>
+    <p>
+        Git is a <b>version control system</b> that we install on the computers where we write code. Git allows us take a snapshot of our program, called a <b>commit</b>, at important points along the way as we work. You can think of a commit like a save on a document that you are writing. Although unlike a save, once a commit is made, it is permanently stored in the history of the project. A newer commit does not overwrite the previous commit. If we ever want to go back to the place in time where the commit was made, where all the files looked exactly as they did when we committed, we will be able to do so.
+    </p>
+    <p>
+        When we are ready to save the code from our computers to a location on the web, we will use <a href="https://github.com/" target="_blank">GitHub</a>. GitHub allows us to create <b>repositories</b> to store the code and code history for each of our projects. A repository is what we call the container that holds all of the files from our project with all of the commits that have been made to it.
+    </p>
+    <p>
+        Each project that we create will be saved to a repository on GitHub. By the end of your time here, you will have a portfolio of your work represented by all of your GitHub repositories. LinkedIn will be your employment resume and GitHub will serve as your coding resume.
+    </p>
+    <p>
+        Note that all repositories on GitHub are public by default. For a monthly fee, GitHub offers <a href="https://github.com/blog/2164-introducing-unlimited-private-repositories" target="_blank">unlimited private repositories</a>. However, this is entirely optional. Private repos are not required for this course.
+    </p>
+    <hr />
+    <h3>Installing Git on Windows</h3>
+    <p>If you do not already have git bash installed, download it <a href="https://git-scm.com/download/win">here.</a></p>
+    <hr />
+    <h3>Installing Git on Macs</h3>
+    <p>To install Git on your personal Mac, follow these steps:
+        <br> First, go to the terminal and copy and paste this code at the prompt:</p>
+    <code>$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>
+    <p>
+        <strong>Note:</strong> the above command spans one line
+    </p>
+    <p>This installs the package manager, Homebrew, on your device.
+        <br> Next, we add this so that Homebrew packages are run before the system versions of the same (which may be dated or not what we want):</p>
+    <code>$ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile</code>
+    <br>
+    <p>Last, install Git with this command:</p>
+    <code prefix="$">brew install git</code>
+    <p>Done!</p>
+    <hr />
+    <h3>Installing Git on ubuntu</h3>
+    <p>To install git via apt on ubuntu run the following commands:</p>
+    <code prefix="$"> sudo apt-get update</code>
+    <br>
+    <code prefix="$">sudo apt-get install git</code>
+    <hr />
+    <h3>Creating a GitHub Account</h3>
+    <p>If you have not already created a personal GitHub account to store your code, head over to the <a href="https://github.com/">GitHub website</a> and sign up for a free account now.</p>
+    <img src="assets/images/github-account-signup.png" alt="github home page" />
+    <p>
+        When creating an account, consider choosing a username that you will feel comfortable sharing in a professional setting. Also, keep in mind that all of the work that you will be adding to your GitHub account is viewable to the public. Make a commitment to always present the best version of your code. Again, your Github profile will serve as your resume and portfolio of coding abilities. Make sure your username is professional, and code within it is clean and presentable.
+    </p>
+    <hr />
+    <h3>How To Set Up Git</h3>
+    <p>
+        Now that you have <em>git</em> installed, you need to do a few things so that the commit messages that will be generated for you will contain your correct information.
+    </p>
+    <p>
+        The easiest way of doing this is through the <code>git config</code> command. Specifically, we need to provide our name and email address because <em>git</em> embeds this information into each commit we do. We can go ahead and add this information by typing:
+    </p>
+    <code prefix="$"> git config --global user.name <span style="color=red;">"Your Name"</span></code>
+    <br>
+    <code prefix="$"> git config --global user.email <span style="color=red;">"youremail@domain.com"</span></code>
+    <p>
+        We can see all of the configuration items that have been set by typing:
+    </p>
+    <code prefix="$"> git config --list</code>
+    <p>
+        The command should return:
+        <br>
+        <code>user.name=<span style="color=red;">your name</span></code>
+        <br>
+        <code>user.email=<span style="color=red;">youremail@domain.com</span></code>
+    </p>
+    <h3>Conclusion</h3>
+    <p>
+        You should now have git installed and ready to use on your system. To learn more about how to use Git, check out these articles:
+    </p>
+    <ul>
+        <li><a href="https://www.digitalocean.com/community/articles/how-to-use-git-effectively">How To Use Git Effectively</a></li>
+        <li><a href="https://www.digitalocean.com/community/articles/how-to-use-git-branches">How To Use Git Branches</a></li>
+    </ul>
+</section>
+<h2>Getting started with Git</h2>
+<section>
+    <p>
+        <b>Goal:</b> Follow along with this lesson to see how changes are tracked using Git. We'll create a one-page website that says "hello" to the world. The steps we follow in this lesson will reflect the daily workflow we'll use when coding all of our projects. Use the details in the cheat sheet as reference for starting all of your projects.
+    </p>
+    <h2>Git name and email</h2>
+    <p>
+        In order to save code using the Git version control system, Git must have a name and email to stamp every time we take a snapshot of our work. This information is set up differently depending on whether we work with a partner or work alone.
+    </p>
+    <h3>Pair programming setup</h3>
+    <p>
+        When you're pairing at Moringa School, the names and emails of both partners will need to be set.
+        <br> Each person in a pair should have a copy of your collaborative work on their own Github accounts. For example; say munene and achieng are working on <code>github.com/moringaschool/css-sprint</code>, they will fork the repo from the Moringa school organization.
+    </p>
+    <p>
+        Forking means making a copy of something that belongs to you. <a href="http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/">Read more about it here.</a> You can also read more about getting started with git <a href="http://blog.scottlowe.org/2015/01/14/non-programmer-git-intro/">Here</a>.
+    </p>
+    <p>
+        So on to achieng and munene's workflow. At the pairing station (computer being used), achieng will clone down her fork of the repo by running:
+        <code>git clone https://github.com/achieng/css-sprint</code>. They will both work together on this repo, making frequent commits as they progress through the sprint. Occassionally, they will want to push their work up to their github accounts. You should do this frequently, perheps every few commits. You should certainly push every time one of you gets up from the pairing station.
+    </p>
+    <p>
+        Its easy for achieng to push work up to her folk: all she needs to do is <code>$ git push origin master</code>. But how might we push work up to munene's fork of the repo?
+        <br> we will need to set up another remote! In git, you can set up a <b>remote</b> which points to another copy of your repo stored on some other computer. When achieng cloned down her repo, it came with a remote called <b>origin</b>.
+    </p>
+    <p>
+        we can see our existing remotes and create new ones using the <code>git remote</code> command. Remotes can be given names to make them more descriptive. How do we do this?
+        <br> We will create a remote called <em>munene</em> which points to munene's fork:
+        <br>
+        <code prefix="$"> git remote add munene https://github.com/munene/css-sprint</code>
+        <br> Now our pair can push to munene's fork using <code>$ git push munene master</code>
+    </p>
+    <h3>Summary</h3>
+    <ol>
+        <li>Both pairs fork repo on Github</li>
+        <li>One pair clones down their fork by running <code>$ git clone ... </code></li>
+        <li>Add another pair's fork as a remote by running <code prefix="$"> git remote add ...</code></li>
+        <li><code prefix="$"> git push origin master</code></li>
+        <li><code prefix="$"> git push pair master</code></li>
+    </ol>
+    <h3>Practice: Tracking changes with Git</h3>
+    <p>
+        We have our project directory created and our Git repository initialized. Now, we can create the HTML file that will say hello to the world. Let's make an empty file at the command line in our project directory:
+    </p>
+    <code prefix="$"> touch hello-world.html</code>
+    <p>
+        Now, let's open our project directory in Atom so that we can add some content to our empty HTML file.
+    </p>
+    <code prefix="$"> atom .</code>
+    <p>
+        Here's your project directory in Atom with an empty file open.
+    </p>
+    <img src="assets/images/project-directory.png" alt="project directory in atom" style="width:600px;" />
+    <p>
+        In the coming lessons, we are going to learn all about HTML but for now, copy and paste <a href="https://codeshare.io/moringaprep">this text</a> into your <em>hello-world.html</em> file in Atom
+    </p>
+    <p>
+        We save our file in Atom and see the blue circle on the <em>hello_world</em> tab turn from a circle to an x. If we aren't sure if our changes have been saved, this is the indicator we can use to double check. No blue circle, changes saved.
+        <br> We can view our HTML in the web browser by going to our Desktop GUI folder and double-clicking on hello-world.html.
+    </p>
+    <img src="assets/images/hello-world-browser.png" alt="Hello world in browser" />
+    <h3>Git Tracking</h3>
+    <p>
+        Now, let's see what Git has done with our changes by running the command <em>git status</em>
+    </p>
+    <code prefix="$"> git status<br>
+    On branch master<br>
+
+    Initial commit<br>
+
+    Untracked files:<br>
+      (use "git add <file>..." to include in what will be committed)<br>
+
+        hello-world.html<br>
+
+    nothing added to commit but untracked files present (use "git add" to track)
+  </code>
+    <p>
+        When we ask for the status, Git lets us know that there has been a new file added to our project directory but it is not being tracked because we haven't yet added it to the files for Git to track. Let's do this now using the command Git tells us to use: <em>git add</em>.
+    </p>
+    <code prefix="$"> git add hello-world.html</code>
+    <p>
+        Now when we run <em>git status</em>, we see that adding our new file told Git that these are changes to start tracking. Git lets us know we have a new file that exists, but has not been committed.
+    </p>
+    <h3>Making Git Commits</h3>
+    <p>
+        A commit in Git is a way of saving changes to the permanent history of our project. Right now, our file is saved on our hard drive but it has not been committed to the historical log of the Hello World website. When we make a commit, it is a snapshot of our work exactly as it exists at that moment. Let's commit our work now to the project history
+    </p>
+    <p>
+        The command is <code prefix="$"> git commit</code> when working solo, or on a Windows machine:
+    </p>
+    <code prefix="$"> git commit -m "add initial HTML file with 6 languages saying hello"</code>
+    <p>
+        We use the <em>git commit</em> command, followed by a succinct but descriptive message in <em>" "</em> after the <em>-m</em>. For consistency, the message should complete the sentence, "This commit willâ€¦". So, when looking at our commit we know that this commit will "add initial HTML file with 5 languages saying hello".
+    </p>
+    <p>
+        Let's look at our Git history now using the git log command:
+    </p>
+    <code prefix="$"> git log<br>
+
+    commit a9bf57dee7fb18b36900fd6f7b67bf12c84426ba<br>
+    Author: Ida Mzuri <ida@><br>
+    Date:   Tue Feb 23 11:29:00 2016 -0800<br>
+
+        add initial HTML file with 5 languages saying hello
+  </code>
+    <p>
+        Our initial commit has been assigned a unique identifier of numbers and letters, <em>a9bf57dee7fb18b36900fd6f7b67bf12c84426ba</em>. Forever more, if we want to see our HTML file as it exists right now, we can return to this unique commit.
+    </p>
+    <p>
+        You just shared additional entries for our list! Let's add updates to our HTML file to include any language you can say hello world in:
+    </p>
+    <p>
+        After saving our updates, let's run <em>$ git status</em> to see what it displays:
+    </p>
+    <code>
+    On branch master<br>
+    Changes not staged for commit:<br>
+      (use "git add <file>..." to update what will be committed)<br>
+      (use "git checkout -- <file>..." to discard changes in working directory)<br>
+
+        modified:   hello-world.html<br>
+
+    no changes added to commit (use "git add" and/or "git commit -a")<br>
+  </code>
+    <p>
+        It shows us that the <em>hello-world.html</em> file has been modified. If we would like to commit these changes to our project history, we can add and commit them now.</p>
+    <p>So, how do we know when we should make a commit? As a new developer, this is not an easy question to answer. The phrase that many developers use to describe a good commit is a "logically separate change set". For us in this first week, we'll make commits after we complete a task we've set for ourselves like completing a new file or adding a new element we're trying for the first time. We will only commit when our code works as we expect it to. If it is not working or not working as intended, we need to make the necessary fixes before committing.</p>
+    <p>As you practice using Git, your own sense of when to commit will evolve as your coding becomes more and more advanced.</p>
+    <p>Since we added a couple of additional lines to our HTML and are going to stop working on this code for a while, let's go ahead and add our file and commit our changes.
+    </p>
+    <code prefix="$"> git add hello-world.html</code>
+    <code prefix="$"> git commit -m "add Kikuyu, swahili and blah blah hellos"</code>
+    <p>
+        This is our project's history now
+    </p>
+    <code prefix="$"> git log <br>
+
+    commit f7f936dea9c170288f96a48d7fe3dc6601b4407f<br>
+    Author: idamzuri<ida@><br>
+    Date:   Tue Feb 23 12:16:21 2016 -0800<br>
+
+        add German and Pig Latin hellos<br>
+
+    commit a9bf57dee7fb18b36900fd6f7b67bf12c84426ba<br>
+    Author: ida mzuri <ida@><br>
+    Date:   Tue Feb 23 11:29:00 2016 -0800<br>
+
+        add initial HTML file with 5 languages saying hello<br>
+  </code>
+    <p>
+        As our project grows, we will be able to run git log to see how it has evolved from the beginning to its current state by reading each of our commit messages. The log also tells us the dates and authors of the code that was committed.</p>
+    <p>This may seem like more details than we want for a simple Hello World website but as we go you will see how using Git will make working on more complex tasks or in collaboration with a bigger team incredibly powerful for keeping code organized with each other and over time.</p>
+    <p>Let's take a final look at our website to see our changes
+    </p>
+    <img src="assets/images/hello-world-browser-2.png" alt="Hello world browser 2" />
+    <p>
+        Hurray! Hello, World!
+    </p>
+    <h3>Pushing to Github</h3>
+    <p>With an empty repository awaiting our code, we can now follow the steps to <b>push</b> our code from our local repository to the remote repository.</p>
+    <p>In our project directory, we will make sure our code is working. In this case, we open it in the browser and it looks good. We also ensure that there aren't any outstanding changes that we still need to commit:</p>
+    <code prefix="$"> git status</code>
+    <p>Now we need to tell Git where our remote repository is by providing the web address. We'll use the <em>git remote</em> command.</p>
+    <code prefix="$"> git remote add im https://github.com/idamzuri/hello-world</code>
+    <p>This command tells Git to store information about a remote repository that we gave the nickname, im (the initials for one partner - Ida Mzuri) located at <em>https://github.com/idamzuri/hello-world</em>. We could use any nickname for the remote but we've chosen im for brevity and to be consistent with the initials we are using as pairs. To see that Git has done this successfully, we can run this command:</p>
+    <code prefix="$"> git remote -v</code>
+    <p>It should return the following:</p>
+    <code prefix="$"> im https://github.com/idamzuri/hello-world</code>
+    <p>This shows us all the remotes stored in Git for this project. In this case, we only have one, with the nickname im.
+        <br> To push our code, which means we are copying it from the local to the remote, we run this command:</p>
+    <code prefix="$"> git push im master</code>
+    <p>This indicates that we should push code to the remote with the nickname al from the master. We haven't used the word, "master", before but this is the name Git uses for the main Git repository on our local machine. In the future, we'll see that we can have many copies of a repository on our local machines all in different stages of development. The master is always considered the master copy.</p>
+    <p>For security reasons, only the owner of the remote GitHub repository is able to push code to it. This means that we need to enter our login information to confirm our ownership. Once entered, the code is copied to the GitHub repository and we can see it online if we go to our GitHub repository URL https://github.com/idamzuri/hello-world. We can see the file structure and the commits in GUI form that we saw in our terminal.</p>
+    <h3>Cloning from Github</h3>
+    <p>So, how do we get our code back to our local from the remote? What if we push our code up to GitHub at Moringa school and want to work on it at home on our personal devices? To do this, we'll need to clone our GitHub repository on our local machines. To practice this, let's delete our hello-world project directory and clone it again from GitHub. To delete a whole directory, we can't be in it so we'll go up a directory level and then remove it:</p>
+    <code prefix="$"> cd ..</code>
+    <br>
+    <code prefix="$"> rm -rf hello-world</code>
+    <p>
+        Poof! Gone. Now, if we want to copy it in the exact same location from GitHub, we get the URL for the remote repository and run:
+    </p>
+    <code prefix="$"> git clone https://github.com/idamzuri/hello-world</code>
+    <p>
+        Replace <em>idamzuri</em> with your username.
+    </p>
+    <p>
+        Now, an <em>ls</em> shows us our directory is there with our code file in it. Let's go into the project directory:
+    </p>
+    <code prefix="$"> cd hello-world</code>
+    <p>
+        If we do a <em>git log</em>, we see that our commit history arrived with our directory and code.
+    </p>
+    <p>
+        If we run <em>git remote -v</em>, we also see that our newly created local <em>.git</em> repository is automatically linked - with the nickname <b>origin</b> - to the remote repository from which we cloned.
+    </p>
+    <code prefix="$"> git remote -v<br>
+    origin  https://github.com/idamzuri/hello-world (fetch)<br>
+    origin  https://github.com/idamzuri/hello-world (push)
+  </code>
+    <p>
+        If we make changes to the code and want to push again, we would be able to use the origin nickname that came with the repository from GitHub (e.g. <em>git push origin master</em>).
+    </p>
+    <p>
+        <em>Note: only one location can be designated with the nickname "origin". So, if we clone one project but want to push to two different repositories, they cannot both be nicknamed "origin". That is another good reason to use your initials as the nickname of the remote repository.</em>
+    </p>
+    <p>
+        Whew! This has been a mountain of Git concepts and terminology to explore. Don't try and memorize this information. Use the cheat sheets for reference to walk through set up and usage in your projects to come. Before you know it, it'll become ingrained in your daily workflow.
+    </p>
+    <p>
+        <b>Be sure that you are not cloning a project inside of an existing local repository. In other words, you should not be inside of a project directory when you run the <code>git clone</code> command. Otherwise you'll end up with one git repository inside of another.</b>
+    </p>
+</section>
+<section>
+<h1>Hyper Text Markup Language (HTML)</h1>
+    <p>
+        Many people think that creating a web page involves really complicated code that requires extensive studying to understand. This is not necessarily the case. In the next lesson we will make a simple web page together. But before we do that let's quickly go over what the World Wide Web is in a nutshell.</p>
+    <p>The web is made up of mostly text files - like the ones you created to write your papers in high school - as well as some other files like images or videos. These files are stored on computers that are linked together over networks. When you put a web site's address into your browser, you are really just asking to see a particular file, or combination of files.</p>
+    <p>We've already had a bit of a taste of a basic HTML file with our Hello World and Goodbye web pages. Now, we're going to focus on the basics of HyperText Markup Language or HTML that we previously just cut and paste into our pages.</p>
+    <p>It looked a bit like this in Atom
+        <pre>
+        <code class="html">
+          &lt;h1&gt;HTML lesson 1&lt;/h1&gt;
+          &lt;h2&gt;Of Moringa School&lt;/h2&gt;
+
+          &lt;p&gt;The goal for this lesson is to show how simple HTML is to read and write by displaying a text written in HTML and what it looks like when it is displayed in a browser.&lt;/p&gt;
+        </code>
+      </pre>
+    </p>
+    <p>
+        and like this in our browser:
+    </p>
+    <code>
+    <h1 style="color:black;">HTML lesson</h1>
+    <h2 style="color:black;">Of Moringa School</h2>
+
+    <p>The goal for this lesson is to show how simple HTML is to read and write by displaying a text written in HTML and what it looks like when it is displayed in a browser.</p>
+  </code>
+    <p>
+        <b>HyperText</b>, the "HT" of HTML is a nerdy word for a link. The "ML" of HTML stands for <b>markup language</b>. As we can see in the example above, the text in the HTML file is normal text that is <em>marked up</em> with instructions written inside of these &lt;&gt;, known as <strong>angle brackets</strong>. The actual language of HTML is all of those instructions that we wrap around the text to format it and as we'll see, many other instructions for things like images, links, videos and more. </p>
+    <p>Let's start writing our first HTML!</p>
+</section>
+<section>
+    <h2>Indentation and Spacing</h2>
+    <p>
+        When you are writing HTML (or any other programming language), well-written code follows consistent indentation and spacing patterns. In some languages, indentation and spacing are required for the code to function properly. In HTML, inconsistent indentation and spacing will not impact the functionality of the web page but will cause your code to be difficult to read and understand. Sloppy code is difficult for everyone to work with.</p>
+    <p>Here is an example of some HTML with poor indentation and spacing:
+    </p>
+    <pre>
+    <code class="html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;&lt;head&gt;
+          &lt;title&gt;  Example title&lt;/title&gt;
+              &lt;/head&gt;
+      &lt;body&gt;
+          &lt;h1&gt;Example header&lt;/h1&gt;
+        &lt;p&gt; Page content  &lt;/p&gt;
+               &lt;body&gt;
+        &lt;/html&gt;
+    </code>
+  </pre>
+    <p>
+        It is difficult to see where the various elements begin and end and which elements are nested within other elements.</p>
+    <p>Here is the same code with standard indentation and spacing:
+    </p>
+    <pre>
+    <code class="html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;  Example title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Example header&lt;/h1&gt;
+            &lt;p&gt; Page content  &lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code>
+  </pre>
+    <p>In HTML, the beginning and ending tags of an element on multiple lines should always be left-aligned. For example, when you see &lt;html&gt;, you should be able to visually scan the page straight down to find its closing tag (the same for &lt;head&gt; and &lt;body&gt;). One way to implement this is to create opening and closing tags at the same time and then add the contents.</p>
+    <p>When elements are nested within another element, they should be indented two spaces from the opening tag. For example, &lt;head&gt; is indented two spaces from &lt;html&gt; and &lt;title&gt; is indented two spaces from &lt;head&gt;.</p>
+    <p>If you use the tab key to space over, make sure it is set to two spaces. Some defaults are set to other amounts such as four spaces which leaves too much white space and is not standard practice.</p>
+    <p>Also, notice that there is no space between the text content of an element and its tags. For example, &lt;h1&gt;Example header&lt;/h1&gt; has no spaces between &lt;h1&gt; and the word <em>Example</em>.</p>
+    <p>Regardless of the language you use to write code, learn the indentation and spacing standards for it. Practice consistency so that your code is easily readable to other developers as well as your future self.</p>
+</section>
+<section>
+    <h2>Practice Indentation and Spacing</h2>
+    <p>
+        <b>Goal:</b> Continue developing good indentation and spacing habits while simultaneously exploring the anatomy of a basic website, and practicing cloning Git repositories. These skills will be used nonstop during your time at Moringa Coderamp.
+    </p>
+</section>
+<section>
+    <h2>Warm Up</h2>
+    <p><em>Discuss the following with your partner:</em></p>
+    <ul>
+        <li>Why is indentation and spacing important? What benefit is there to ensuring it's consistent?</li>
+        <li>When do we indent?</li>
+        <li>How many spaces should make up one indent?</li>
+    </ul>
+</section>
+<section>
+    <h2>Code</h2>
+    <hr>
+    <h3>Cookie Recipe (Solo sprint)</h3>
+    <p>
+        Now itâ€™s time to practice using Git clone and fixing indentation and spacing. There is a <a href="https://github.com/iantheninja/cookie-recipe/blob/master/cookie-recipe.html">cookie repository</a> on GitHub that contains an HTML file with terrible indentation, spacing and HTML tag placement. It really needs your help.
+    </p>
+    <ol>
+        <li>Use <code>git clone</code> to clone the repository onto your desktop. (<em>Be sure you have changed into the desktop directory <code>(cd ~/Desktop)</code> before cloning the repository, so that you do not accidentally clone the cookie repository inside of an existing project folder.</em>)</li>
+        <li>Set up a new remote repository on your own GitHub for this project and link it to your local project folder.</li>
+        <li>Go through the HTML file and fix every indentation error and commit. THEN..</li>
+        <li>Go through the HTML file and fix every spacing error and commit. THEN ...</li>
+        <li>Go through the HTML file and fix every tag placement error and commit.</li>
+        <li>Have a teacher(me :-)) come by and check your file for any errors that you have missed.</li>
+        <li>Push your changes to the remote you created in your own GitHub account.</li>
+    </ol>
+    <p>
+        Today (and always!), focus on making sure that <em>all</em> of your code is properly indented and spaced and your HTML tags are properly placed around the content they contain.
+    </p>
+</section>
+<section>
+    <h2>HTML Block Elements</h2>
+    <p>
+        We're going to start our HTML writing by working with <b>block elements</b>. These are HTML elements that when displayed start on a line of their own, in effect making a block on the page.
+        <br> Let's create a project directory and initialize a Git repository for a new project called <em>my-first-webpage</em>.
+    </p>
+    <p>
+        As a review, here are the steps:
+    </p>
+    <ul>
+        <li>Open <b>Terminal</b></li>
+        <li>Make a project directory called <code>my-first-webpage</code> in your <em>Desktop</em> directory. (It is important that when you begin a new project you create a new project folder that is <em>not</em> nested inside of an existing project folder.) Change into your project directory.</li>
+        <li>Change into your project directory.</li>
+        <li>If you type <code>pwd</code> now, you should see that you are in your project directory at <em>/Users/Guest/Desktop/my-first-webpage</em>.</li>
+        <li>Within your project directory, initialize your git repository: <code>$ git init</code></li>
+        <li>Create an empty file: <code>$ touch my-first-webpage.html</code>.</li>
+        <li>Open your project directory in atom.</li>
+    </ul>
+    <p>
+        With <em>my-first-webpage.html</em> open in Atom, let's start by typing the following code (no more copying and pasting!): </p>
+    <p>
+        <code>&lt;p&gt;This is my first web page!&lt;/p&gt;</code>
+        <code>&lt;p&gt;Isn't it nice?&lt;/p&gt;</code>
+    </p>
+    <p>
+        The instructions for formatting around the text are called tags. The &lt;p&gt; is called a p tag. It means that everything that follows is a paragraph, until &lt;/p&gt; is reached. The &lt;/p&gt; is called a closing tag or end tag and indicates the paragraph is at its end. The &lt;p&gt; is a block element because it is written on its own line and creates a block of content on the displayed page.
+    </p>
+    <p>
+        Now, if we open the file in a web browser (right click on the file and choose open with Google Chrome). We will be using Google chrome over the course of this course. If you have not downloaded it yet. Go ahead and download it <a href="https://www.google.com/chrome/browser/desktop/">here</a>. We have two paragraphs of text. We just wrote our first HTML code! Let's commit it!
+    </p>
+    <code prefix="$"> git add my-first-webpage.html</code>
+    <br>
+    <code prefix="$"> git commit -m "add initial paragraph block elements to the page"</code>
+    <pre>
+    <code class="html">
+      &lt;h1&gt;My first web page&lt;/h1&gt;
+      &lt;h2&gt;Written with the guidance of Moringa Prep&lt;/h2&gt;
+
+      &lt;p&gt;This is my first web page!&lt;/p&gt;
+      &lt;p&gt;Isn't it nice?&lt;/p&gt;
+    </code>
+  </pre>
+    <p>
+        Here, we've added a main <b>header</b> (&lt;h1&gt;) and a subheader (&lt;h2&gt;). You can actually add up to six different levels of headers using &lt;h1&gt; through &lt;h6&gt;. Like the paragraph tags, we have an opening tag that indicates where the header begins (&lt;h1&gt;) and a closing tag that indicates where it ends (&lt;/h1&gt;) . Closing tags always match the header but have a backslash in front.
+    </p>
+    <p>
+        HTML ignores empty spaces and blank lines, which is called <b>whitespace</b>. That's why the extra line we might add between our headers and paragraphs doesn't do anything when it is displayed. We could take it out, or make it three spaces, and it would look exactly the same in the browser.
+    </p>
+    <p>
+        Let's commit again!
+    </p>
+    <p>
+        Let's keep going with some list elements
+    </p>
+    <pre>
+    <code class="html">
+      &lt;h1&gt;My first web page&lt;/h1&gt;
+      &lt;h2&gt;Written with the guidance of Moringa Prep&lt;/h2&gt;
+
+      &lt;p&gt;This is my first web page!&lt;/p&gt;
+      &lt;p&gt;Isn't it nice?&lt;/p&gt;
+
+      &lt;p&gt;Here are some things I'm going to learn about coding:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;li&gt;And a lot more!&lt;/li&gt;
+      &lt;/ul&gt;
+    </code>
+  </pre>
+    <p>
+        Here we've added an <b>unordered list</b> (&lt;ul&gt;) with four <b>list items</b> (&lt;li&gt;). If we wanted to make an <b>ordered list</b> that uses numbers and letters instead of bullets, we would use an &lt;ol&gt; tag instead of a &lt;ul&gt;.
+    </p>
+    <p>
+        Notice how I've indented the &lt;li&gt;s within the &lt;ul&gt;s. This makes it much easier to read which tags are nested, and makes it easy to see where the closing tag goes when it's not on the same line. It's a good practice to indent using two spaces (tabs are often rendered as different widths, whereas spaces are standard). It's also a good idea to write your closing tag just after you write your opening tag, and then go back and fill in whatever comes in the middle. This way, you won't forget to close a tag after you've opened it.
+    </p>
+    <p>
+        Let's commit again! This time, do it by yourself and come up with a useful commit message.
+    </p>
+    <p>
+        We have some final additions to make for this to be a valid HTML web page:
+    </p>
+    <pre>
+    <code class="html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title>Web page #1!&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;My first web page&lt;/h1&gt;
+          &lt;h2&gt;Written with the guidance of Moringa Prep&lt;/h2&gt;
+
+          &lt;p&gt;This is my first web page!&lt;/p&gt;
+          &lt;p&gt;Isn't it nice?&lt;/p&gt;
+
+          &lt;p&gt;Here are some things I'm going to learn about coding:&lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;CSS&lt;/li&gt;
+            &lt;li&gt;JavaScript&lt;/li&gt;
+            &lt;li&gt;And a lot more!&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code>
+  </pre>
+    <p>
+        The &lt;!DOCTYPE html&gt; tag tells the browser that this document contains HTML, and specifically that it contains the newest version of HTML, HTML5. (An example of a doctype for an older version of HTML is
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">.)
+        <br> The &lt;head&gt; tag contains information about the page, which for now is just the &lt;title&gt; tag. The &lt;title&gt; tag sets the title for the web page - if you look in your browser, you can see that the title of the browser tab is now Web page #1!.
+        <br> Finally, the actual content of the page is now wrapped in a &lt;body&gt; tag.
+        <br> Now go ahead and commit your final changes.
+    </p>
+    <p>
+        We're done for the moment. It's a good time to push the project to GitHub. As a reminder, here are the steps (which should be done by both you and your pair, since you each want a copy of the repository on your GitHub):</p>
+    <ul>
+        <li>Create my-first-webpage repository on GitHub</li>
+        <li><code>$ git remote add [remote nickname] [remote url]</code> (replacing [remote nickname] with your initials or another good nickname and [remote url] with the URL to the GitHub repository you just created)</li>
+        <li><code>$ git push [remote nickname] master</code> (replacing [remote nickname] with the same nickname you used when you added the remote link)</li>
+        <li>Check on GitHub that your code uploaded successfully</li>
+    </ul>
+    </p>
+</section>
+<section>
+    <h2>HTML:Block Elements Part 2</h2>
+    <p>
+        Now let's create a second web page using HTML block elements in our <em>my-first-webpage project</em>. We'll have two web pages in our directory. The new page will list a few of our favorite things.
+        <br> When we want to add a file to a project directory, we need to make sure we are in the correct directory. For this new page, we'll use <code>$ pwd</code> to ensure that we are in <em>my-first-webpage</em>. If not, we'll navigate to the correct folder and then add a new html file called favorite-things.html. Once added, we'll open our project in Atom so that we can add the content for our new page.
+    </p>
+    <code prefix="$"> pwd <br>
+    /Users/staff/Desktop/my-first-webpage <br>
+  </code>
+  <code prefix="$"> touch favorite-things.html <br>
+  </code>
+  <code prefix="$"> atom . <br>
+  </code>
+    <p>
+        Type the following HTML into <em>favorite-things.html</em>. Resist the urge to cut and paste. An often overlooked part of learning to code is developing the muscle memory of typing code which is different than typing regular text. We need to learn the rhythm of indenting, spacing and moving around your code and that only evolves with the repetition of hands on keys.
+        <br> As you type this file content, think through how each tag will impact the way the text will display in the browser.
+    </p>
+    <p data-height="488" data-theme-id="0" data-slug-hash="bZOxmg" data-default-tab="html" data-user="iantheninja" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/iantheninja/pen/bZOxmg/">bZOxmg</a> by Ian Githinji (<a href="http://codepen.io/iantheninja">@iantheninja</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <p>
+        Let's take a look!
+        <br>
+    </p>
+    <p>
+        After finish this and seeing it display as we expect it to, we'll make sure to commit our changes with Git and push the updated project to GitHub:
+    </p>
+    <code> git add favorite-things.html <br>
+      $ git commit -m "add web page with info on favorite things"<br>
+      $ git push [remote nickname] master (replacing nickname with the same nickname you used when you added the remote link in the previous lesson)<br>
+    </code> check on GitHub that your my-first-webpage repository now contains both my-first-webpage.html and favorite-things.html.
+    </p>
+</section>
+<section>
+    <p>
+        <b>Goal:</b> Practice creating basic HTML webpages, with special attention toward spacing and indentation. As we begin to explore more and more complex code, proper indentation and spacing will become downright vital to maintaining clean, easy-to-manage projects. Begin developing these good habits now!
+    </p>
+    <h2>Warm up</h2>
+    <hr>
+    <p>
+        <em>Discuss the following with your partner:</em>
+        <ul>
+            <li>What does the abbreviation HTML stand for?</li>
+            <li>Why does indentation and spacing matter?</li>
+            <li>How do you know if a tag is an opening or closing tag?</li>
+        </ul>
+    </p>
+    <h2>Code</h2>
+    <hr>
+    <h3>Indentation and Spacing Practice</h3>
+    <p>
+        Before continuing, go back and carefully check the indentation and spacing in your <em>my-first-webpage.html</em> and <em>favorite-things.html</em> files. After fixing them up, do another commit, have a teacher double-check your indentation and spacing, then push again to GitHub.
+    </p>
+    <h3>Pet Websites</h3>
+    <p>
+        Now it's your turn!
+        <br> Make a homepage for your cat or a blog for your dog. You can get creative here! Maybe include information about their favorite toys and their favorite activities.
+        <br>
+    </p>
+    <p>
+        <b>Don't forget to make a new project folder, commit regularly and push to a remote repository on GitHub.</b> Continue to pay close attention to indentation and closing all tags you open.
+        <br> Of course, you're more than welcome to make webpages about anything you want - these are just suggestions.
+    </p>
+    <p>
+        Have a teacher check the indentation and spacing of this project before you move on.
+    </p>
+</section>
+<section>
+    <h2>Inline elements</h2>
+    <p>
+        All of the tags we learned about in the previous lessons are block elements, meaning that each element is displayed on a new line. In this lesson, we are going to look at elements that do not appear on their own line but share a line with other elements. These are called <b>inline elements.</b>
+        <br> We're going to modify our first webpage to include an inline element:
+    </p>
+    <code>&lt;p&gt;This is my &lt;strong&gt;first web page&lt;/strong&gt;!&lt;/p&gt;</code>
+    <br>
+    <p>
+        The &lt;strong&gt; tag indicates that something is important. By default, it will make the text inside it bold (although we'll learn how to customize this soon). If we want to <em>ephasize</em> something, we'll use the &lt;em&gt; tag, which will italicize it:
+    </p>
+    <code>&lt;h2&gt;Written with the guidance of &lt;em&gt;Moringa School&lt;/em&gt;&lt;/h2&gt;</code>
+    <p>
+        Now, let's learn about perhaps the most important HTML tag of them all:
+    </p>
+    <code>&lt;p&gt;Check out &lt;a href="http://www.moringaschool.com/"&gt;Moringa School&lt;/a&gt;. It's a great school for learning web programming!&lt;/p&gt;</code>
+    <p>
+        The anchor tag, &lt;a&gt;, creates a link, and the <code>href</code> (for <em>hypertext reference</em>) <strong>attribute</strong> provides the web address the link will go to.
+        <br> Our <em>my-first-webpage</em> project contains two HTML documents. Here's how we can link from one to another:
+    </p>
+    <code>&lt;p&gt;Here is a link to my &lt;a href="favorite-things.html"&gt;favorite things&lt;/a&gt;.&lt;/p&gt;</code>
+    <p>
+        Instead of supplying a full path, we've provided a <strong>relative path.</strong> If a link doesn't start with <em>http://</em> (or <em>https://</em>, or a few other specific protocols you may come across), your web browser will look in the same folder for the file you're linking to.
+        <br> This brings up a pitfall you should be careful to avoid: if you write a link like <em>&lt;a href="www.moringaschool.com/"&gt;Moringa School&lt;/a&gt;</em>, it will look for a file called www.moringaschool.com in the current directory. So if you're linking to another website, don't forget to put http:// in front!
+        <br> Finally, let's make our webpage a bit prettier and include an image. Save an image in the same folder as your HTML files and then include it like this:
+    </p>
+    <code>&lt;img src="kitten.jpg" alt="A photo of a cute kitten"&gt;</code>
+    <p>
+        The &lt;img&gt; tag is different from the other tags we've used in that it is <strong>self-closing</strong>: you don't need a closing tag. Also notice the <em>alt</em> attribute, which the browser displays if it can't render the image. This attribute is optional, but it's a really good idea to include it, so that blind people using software that reads web pages to them can know what the image is. Typically, webpages will store their images in a separate folder from their HTML. Let's create a folder called <em>img</em> and put the image file in there. Now, we need to update our code to tell the browser where to find the image:
+    </p>
+    <code>&lt;img src="img/kitten.jpg" alt="A photo of a cute kitten"&gt;</code>
+    <p>
+        <em>img/kitten.jpg</em> tells the browser to look in the img folder in the current directory and then look for the <em>kitten.jpg</em> file.
+        <br> Let's update the page of favorite things to include some of the concepts we just learned about:
+    </p>
+    <p data-height="265" data-theme-id="0" data-slug-hash="NAoPKP" data-default-tab="html" data-user="iantheninja" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/iantheninja/pen/NAoPKP/">NAoPKP</a> by Ian Githinji (<a href="http://codepen.io/iantheninja">@iantheninja</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+    <p>
+        Make sure to commit and push to your remote GitHub repository after updating. Check that your GitHub repository shows the changes.
+    </p>
+</section>
+<section>
+    <h2>Practice: Inline Elements</h2>
+    <p>
+        <b>Goal:</b> Familiarize yourselves with the usage of inline HTML elements while continuing to practice Git, indentation and spacing. Inline HTML elements are an important building block of most any website, so it's important to become comfortable with them now.
+    </p>
+    <h2>Warm up</h2>
+    <p>
+        <em>Discuss the following with your partner:</em>
+    </p>
+    <ul>
+        <li>What is the difference between block elements and inline elements?</li>
+        <li>What are 2 examples of inline elements?</li>
+        <li>Why is an <em>alt</em> attribute on an image necessary?</li>
+    </ul>
+    <h2>Code</h2>
+    <h3>HTML Elements Practice</h3>
+    <p>
+        Here are some exercises for you to practice using inline HTML elements. Don't forget to commit your changes and push to your remote repositories on GitHub. Continue to make sure you are using proper indentation to keep your code clean and readable!
+    </p>
+    <ul>
+        <li>Add &lt;strong&gt; and &lt;em&gt; tags to your my-first-webpage.html, like I did in the lesson.</li>
+        <li>Add photos of your favorite things to your <em>favorite-things.html</em> page. Make an <em>img</em> folder to hold these photos and make sure the path is correctly written on your webpage.</li>
+        <li>In your favorite-things.html page, add links to your favorite websites.</li>
+        <li>Update your cat's homepage or your dog's blog with photos, links, and &lt;strong&gt; and &lt;em&gt; tags.</li>
+    </ul>
+    <h2>Peer Code Review</h2>
+    <p>
+        Programming does not happen in a vacuum. It requires collaboration and communication. By reviewing the code of a peer, you are able to see alternative solutions to the same problems that you were tackling. You will also experience what it feels like to walk into a code base that you have not contributed to before - something that will be a regular occurrence outside of Moringa School. Open the code from a site you've created today in Atom, and its corresponding GitHub repository in the browser. Then, go to review the code of a pair across from you. They will review yours. Look at their code and provide feedback on the following questions:
+    </p>
+    <ul>
+        <li>Is the HTML code indented and spaced properly?</li>
+        <li>Does each project have frequent Git commits? Are the messages descriptive, and in the proper tense?</li>
+        <li>Are HTML tags opened and closed properly? Are the correct tags being used for the correct purposes?</li>
+        <li>What was completed particularly well?</li>
+    </ul>
+    <p>
+        Also, ask questions. Clarify areas you may not understand. Share ideas. Offer advice and perspective. Admire and support your peers. Embrace the opportunity to support and congratulate each other on completing your first week of code school!
+    </p>
+</section>
+<section>
+    <h2>READMEs</h2>
+    <p>
+        Every GitHub repository should include a <em>README.md</em> file that provides any visitor to the repository with detailed information about the project. READMEs are called READMEs because they scream to the user "READ ME!". The READMEs we will write have the extension <em>.md</em> which indicates that they are written in the <strong>Markdown</strong> language. Like HTML, Markdown is a language that uses marking annotation to format text for display. Markdown is for simple documentation like a README file. For reference and resources, visit the cheat sheet for this lesson.
+        <br> The README.md file should be stored at the top level of the project folder. GitHub will look for this file and present it on the main viewing page of the repository.
+        <br> READMEs vary widely from one repository to the next. Moringa School recommends including as a minimum the following sections:
+    </p>
+    <ul>
+        <li>Application name</li>
+        <li>Names of contributors</li>
+        <li>Description of the project's purpose</li>
+        <li>Complete setup/installation instructions</li>
+        <li>License information with a copyright and date</li>
+    </ul>
+    <p>
+        Additional sections to consider:
+    </p>
+    <ul>
+        <li>Technologies added</li>
+        <li>Known bugs</li>
+        <li>Contact information</li>
+        <li>Support or contribution instructions</li>
+    </ul>
+    <h2>README Template</h2>
+    <p>
+        Here is an example README from an <a href="https://github.com/FreeCodeCamp/FreeCodeCamp">open source project</a>:
+    </p>
+    <p>
+        It's worth taking the time to make your README look nice because it will be the first thing anyone will see in your repositories. If people see that you have a messy or incomplete README, they will assume that your code is also messy or incomplete. But if you have a README with clean formatting and clear setup instructions, your users will have more confidence in trying out your software (and in trying out you, if they're an employer looking to hire!).
+        <br>
+        <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Here</a> is a <strong>markdown</strong> cheatsheet which you can use as a reference when adding markdown to your READMEs.
+    </p>
+    <h2>Licensing</h2>
+    <p>
+        An open source license details how others can use your code. <strong>MIT</strong> and <strong>GPL</strong> are the most common licenses. An MIT license means your code is free to use by anyone and you are not liable (Rails and jQuery use an MIT license). GPL also indicates free usage of the code but when used, the resulting work MUST be open source (Linux, Git and Wordpress use GPL). For additional details on choosing a license for your code, visit GitHub's <a href="http://choosealicense.com/">Choose a License site</a>.
+    </p>
+</section>
+ìsÛ»³      Y#ôÞY#ôÔ=É™Y%¤ø   ,    :http://moringaprep-ft.herokuapp.com/01.html necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK 
+Content-Type: text/html;charset=utf-8
+Last-Modified: Wed, 10 May 2017 13:19:28 GMT
+Content-Length: 65705
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.3.1 (Ruby/2.3.4/2017-03-30)
+Date: Tue, 23 May 2017 08:37:39 GMT
+Via: 1.1 vegur
+ original-response-headers Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Last-Modified: Wed, 10 May 2017 13:19:28 GMT
+Content-Length: 65705
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: WEBrick/1.3.1 (Ruby/2.3.4/2017-03-30)
+Date: Tue, 23 May 2017 08:37:39 GMT
+Via: 1.1 vegur
+ uncompressed-len 0   ©

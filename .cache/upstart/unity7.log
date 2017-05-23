@@ -1,0 +1,74 @@
+WARN  2017-05-23 11:40:58 unity.iconloader IconLoader.cpp:756 Unable to load icon file:/// at size -1x22: Can't open directory
+1495528858792	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1495528858835	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1495528859009	addons.update-checker	WARN	Update manifest for aushelper@mozilla.org did not contain an updates property
+1495528859207	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+1495528859222	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+ERROR 2017-05-23 11:41:15 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 11:41:15 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 38. The row has probably been removed
+ERROR 2017-05-23 11:41:15 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 38
+1495528951624	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+javaldx: Could not find a Java Runtime Environment!
+Warning: failed to read path from javaldx
+
+(soffice:4292): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+ERROR 2017-05-23 12:21:34 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:21:34 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 39. The row has probably been removed
+ERROR 2017-05-23 12:21:34 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 39
+
+(soffice:4309): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+
+(soffice:4309): Gdk-WARNING **: gdk_window_set_icon_list: icons too large
+ERROR 2017-05-23 12:21:37 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:21:37 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 39. The row has probably been removed
+ERROR 2017-05-23 12:21:37 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 39
+
+(nautilus:4340): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+
+(nautilus:4340): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+
+(nautilus:4340): Gtk-CRITICAL **: gtk_icon_theme_get_for_screen: assertion 'GDK_IS_SCREEN (screen)' failed
+
+(nautilus:4340): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(nautilus:4340): GLib-GObject-CRITICAL **: g_signal_connect_object: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+ERROR 2017-05-23 12:22:48 unityte <unknown>:0 g_value_set_object: assertion 'g_value_type_compatible (G_OBJECT_TYPE (v_object), G_VALUE_TYPE (value))' failed
+WARN  2017-05-23 12:23:24 unityct(io) <unknown>:0 Unable to load keyfile from file 'gdebi.desktop': No such file or directory
+ERROR 2017-05-23 12:24:35 unity.settings UnitySettings.cpp:318 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2017-05-23 12:27:26 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:27:26 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 3. The row has probably been removed
+ERROR 2017-05-23 12:27:26 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 3
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+ERROR 2017-05-23 12:33:43 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:33:43 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 7. The row has probably been removed
+ERROR 2017-05-23 12:33:43 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 7
+ERROR 2017-05-23 12:47:45 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:47:45 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 1. The row has probably been removed
+ERROR 2017-05-23 12:47:45 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 1
+ERROR 2017-05-23 12:57:42 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:57:42 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 1. The row has probably been removed
+ERROR 2017-05-23 12:57:42 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 1
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+ERROR 2017-05-23 12:59:08 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2017-05-23 12:59:08 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x27c9eb0 at position 3. The row has probably been removed
+ERROR 2017-05-23 12:59:08 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x27c9eb0 holds a NULL value in row 3

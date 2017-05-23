@@ -1,0 +1,16 @@
+
+(unity-panel-service:1547): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1547): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1547): Indicator-Appmenu-WARNING **: Already have a menu for window ID 79691777 with path /com/canonical/menu/4C00001 from :1.171, unregistering that one
+
+(unity-panel-service:1547): LIBDBUSMENU-GLIB-WARNING **: Getting layout failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface 'com.canonical.dbusmenu' on object at path /com/canonical/menu/4C0003F
+
+(unity-panel-service:1547): Indicator-Appmenu-WARNING **: Already have a menu for window ID 79691839 with path /com/canonical/menu/4C0003F from :1.171, unregistering that one
+
+(unity-panel-service:1547): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1547): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1547): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed

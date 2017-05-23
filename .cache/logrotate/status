@@ -1,0 +1,12 @@
+logrotate state -- version 2
+"/home/carroline/.cache/upstart/unity-panel-service.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/unity-settings-daemon.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/dbus.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/ssh-agent.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/gpg-agent.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/indicator-sound.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/window-stack-bridge.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/hud.log" 2017-5-23-11:0:0
+"/home/carroline/.cache/upstart/upstart-event-bridge.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/gnome-keyring-ssh.log" 2017-5-23-11:36:42
+"/home/carroline/.cache/upstart/unity7.log" 2017-5-23-11:36:42
